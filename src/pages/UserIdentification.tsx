@@ -71,20 +71,21 @@ export function UserIdentification() {
                   Como podemos {'\n'}
             chamar você?
           </Text>
-                <TextInput
-                  style={[
-                    styles.input,
-                    (isFocused || isFilled) && { borderColor: colors.green }
-                  ]}
-                  placeholder="Digite um nome"
-                  onBlur={handleInputBlur}
-                  onFocus={handleInputFocus}
-                  onChangeText={handleInputChange}
-                />
-                <View style={styles.footer}>
-                  <Button title="Confirmar" onPress={handleSubmit} />
-                </View>
               </View>
+              <TextInput
+                style={[
+                  styles.input,
+                  (isFocused || isFilled) && { borderColor: colors.green }
+                ]}
+                placeholder="Digite um nome"
+                onBlur={handleInputBlur}
+                onFocus={handleInputFocus}
+                onChangeText={handleInputChange}
+              />
+              <View style={styles.footer}>
+                <Button title="Confirmar" onPress={handleSubmit} />
+              </View>
+
             </View>
           </View>
         </TouchableWithoutFeedback>
@@ -137,8 +138,7 @@ const styles = StyleSheet.create({
   footer: {
     width: '100%',
     marginTop: 40,
-    alignItems: 'center',
-    paddingHorizontal: 16,
+    paddingHorizontal: 20,
   },
   buttonIcon: {
     color: colors.white,
