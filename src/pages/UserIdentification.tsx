@@ -45,6 +45,7 @@ export function UserIdentification() {
     try {
       await AsyncStorage.setItem('@plantmanager:user', name);
       navigation.navigate('Confirmation', {
+        nome: name,
         title: 'Prontinho',
         subtitle: `Agora vamos começar a cuidar das suas plantinhas com muito cuidado.`,
         buttonTitle: 'Começar',
@@ -65,11 +66,11 @@ export function UserIdentification() {
             <View style={styles.form}>
               <View style={styles.header}>
                 <Text style={styles.emoji}>
-                  {isFilled ? '😄' : '🤭'}
+                  {isFilled ? '🤗' : '😎'}
                 </Text>
                 <Text style={styles.title}>
-                  Como podemos {'\n'}
-            chamar você?
+                  Qual é o seu {'\n'}
+                  apelido?
           </Text>
               </View>
               <TextInput
@@ -77,7 +78,7 @@ export function UserIdentification() {
                   styles.input,
                   (isFocused || isFilled) && { borderColor: colors.green }
                 ]}
-                placeholder="Digite um nome"
+                placeholder="Digite seu apelido"
                 onBlur={handleInputBlur}
                 onFocus={handleInputFocus}
                 onChangeText={handleInputChange}
@@ -143,5 +144,12 @@ const styles = StyleSheet.create({
   buttonIcon: {
     color: colors.white,
     fontSize: 32,
-  }
+  },
+  subtitle: {
+    textAlign: 'center',
+    fontSize: 18,
+    paddingHorizontal: 20,
+    color: colors.heading,
+    fontFamily: fonts.text
+  },
 });

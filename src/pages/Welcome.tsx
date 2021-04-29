@@ -25,9 +25,9 @@ export function Welcome() {
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
         <Text style={styles.title}>
-          Gerencie {'\n'}
-        suas plantas de {'\n'}
-        forma fácil
+          Cuide com {'\n'}
+        carinho de suas {'\n'}
+        plantas domésticas!
         </Text>
         <Image
           source={wateringImg}

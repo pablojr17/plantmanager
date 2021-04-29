@@ -12,6 +12,7 @@ import fonts from '../styles/fonts';
 import { Button } from '../components/Button';
 
 interface Params {
+  nome: string;
   title: string;
   subtitle: string;
   buttonTitle: string;
@@ -21,7 +22,7 @@ interface Params {
 
 const emojis = {
   hug: '🤗',
-  smile: '😄'
+  smile: '😘'
 }
 
 export function Confirmation() {
@@ -29,6 +30,7 @@ export function Confirmation() {
   const route = useRoute();
 
   const {
+    nome,
     title,
     subtitle,
     buttonTitle,
@@ -46,7 +48,7 @@ export function Confirmation() {
           {emojis[icon]}
         </Text>
         <Text style={styles.title}>
-          {title}
+          {title} {nome}
         </Text>
         <Text style={styles.subtitle}>
           {subtitle}
