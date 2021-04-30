@@ -63,7 +63,7 @@
       "name": "Peperomia",
       "about": "Adapta-se tanto ao sol e sombra, mas prefere ficar num cantinho fresco, sem sol direto. ",
       "water_tips": "Nos dias mais quentes borrife água nas folhas. Regue 3 vezes na semana.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/3.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/peperonia.svg?alt=media&token=829358bc-0519-4d18-86bb-f10908c503d3",
       "environments": [
         "bedroom"
       ],
@@ -77,7 +77,7 @@
       "name": "Imbé",
       "about": "De médio porte que se adapta a diversas regiões, além de ser bem fácil de cultivar. Conquista cada vez mais pessoas.",
       "water_tips": "Mantenha a terra sempre húmida sem encharcar. Regue 2 vezes na semana.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/4.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/imbe.svg?alt=media&token=d19f27be-4d11-4a52-8057-7978aaa405a4",
       "environments": [
         "bedroom",
         "living_room"
@@ -107,7 +107,7 @@
       "name": "Yucca",
       "about": "São indicadas pois são fáceis de manter e cuidar. Você colocar em pequenos vasos, ou até mesmo em xícaras.",
       "water_tips": "Graças à reserva de água dessas verdinhas, é sempre melhor regar pouco. Regue 1 vez na semana.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/6.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/Yucca.svg?alt=media&token=ed4ebd38-9b55-4417-b72c-c78729368e45",
       "environments": [
         "kitchen",
         "bedroom"
@@ -137,7 +137,7 @@
       "name": "Orquídea",
       "about": "Traz sensação de tranquilidade e paz ao ambiente. Requer pouca manutenção e ótima para quem tem pouco espaço.",
       "water_tips": "Regue moderadamente. Reque 4 vezes na semana.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/8.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/orquidea.svg?alt=media&token=37f7472a-feb1-49e3-ac49-d49926f0c8ac",
       "environments": [
         "bathroom"
       ],
@@ -151,7 +151,7 @@
       "name": "Violeta",
       "about": "Com flores delicadas. Elas são ótimas sugestões para decorar o banheiro. ",
       "water_tips": "Nada de molhar as flores e folhas. Regue o solo 2 vezes na semana.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/3.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/violeta.svg?alt=media&token=582242ea-ce5f-44e9-aacb-0f99587477a4",
       "environments": [
         "bathroom"
       ],
@@ -165,13 +165,41 @@
       "name": "Hortênsia",
       "about": "A hortênsia é uma planta rústica e se adapta a diferentes tipos de solos.",
       "water_tips": "Mantenha a terra sempre húmida sem encharcar. Regue 1 vez no dia.",
-      "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/2.svg",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/hortencia.svg?alt=media&token=9b62bdc3-181f-4d61-8acc-de8a1be408bb",
       "environments": [
         "bathroom"
       ],
       "frequency": {
         "times": 1,
         "repeat_every": "day"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Samambaia",
+      "about": "Samambaias são perfeitas para fazer jardins verticais ou então, uma cortina verde.",
+      "water_tips": "Tente manter uma frequência de rega de 3 vezes por semana.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/samambaia.svg?alt=media&token=99a34fca-50e5-4b4a-ac97-65fd8a7388b3",
+      "environments": [
+        "living_room"
+      ],
+      "frequency": {
+        "times": 3,
+        "repeat_every": "week"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Samambaia",
+      "about": "São plantas originárias de áreas muito quentes.",
+      "water_tips": "No verão, o ideal é regar 1 vez por semana e, no inverno, a cada 15 dias",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/minhas-plantas-5916f.appspot.com/o/samambaia.svg?alt=media&token=99a34fca-50e5-4b4a-ac97-65fd8a7388b3",
+      "environments": [
+        "living_room"
+      ],
+      "frequency": {
+        "times": 1,
+        "repeat_every": "week"
       }
     }
   ]
