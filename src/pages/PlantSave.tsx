@@ -20,6 +20,7 @@ import fonts from "../styles/fonts";
 import { format, isBefore } from "date-fns";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { PlantProps, savePlant } from "../libs/storage";
+import { Feather } from "@expo/vector-icons";
 
 interface Params {
   plant: PlantProps;
@@ -33,6 +34,10 @@ export function PlantSave() {
   const { plant } = route.params as Params;
 
   const navigation = useNavigation();
+
+  function navigateBack() {
+    navigation.goBack()
+  }
 
   function handleChangeTime(event: Event, dateTime: Date | undefined) {
     if (Platform.OS === "android") {
@@ -74,6 +79,9 @@ export function PlantSave() {
     <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
       <View style={styles.container}>
         <View style={styles.plantInfo}>
+          <TouchableOpacity style={styles.openButton} activeOpacity={0.7} onPress={navigateBack}>
+            <Feather name="arrow-left" size={24} color="#0f0" />
+          </TouchableOpacity>
           <SvgFromUri uri={plant.photo} height={150} width={150} />
 
           <Text style={styles.plantName}>{plant.name}</Text>
@@ -133,8 +141,8 @@ const styles = StyleSheet.create({
   },
   controller: {
     backgroundColor: colors.white,
-    paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingHorizontal: 10,
+    paddingTop: 10,
     paddingBottom: getBottomSpace() || 20,
   },
   plantName: {
@@ -155,10 +163,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: colors.blue_light,
-    padding: 20,
+    padding: 12,
     borderRadius: 20,
     position: "relative",
-    bottom: 60,
+    bottom: 20,
   },
   tipImage: {
     width: 56,
@@ -169,7 +177,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     fontFamily: fonts.text,
     color: colors.blue,
-    fontSize: 17,
+    fontSize: 16,
     textAlign: "justify",
   },
   alertLabel: {
@@ -188,5 +196,15 @@ const styles = StyleSheet.create({
     color: colors.heading,
     fontSize: 24,
     fontFamily: fonts.text,
+  },
+  openButton: {
+    // flex: 1,
+    // position: "relative",
+    // right: 0,
+    // zIndex: 2,
+    backgroundColor: colors.blue,
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
   },
 });
