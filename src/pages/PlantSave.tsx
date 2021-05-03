@@ -79,9 +79,7 @@ export function PlantSave() {
     <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
       <View style={styles.container}>
         <View style={styles.plantInfo}>
-          <TouchableOpacity style={styles.openButton} activeOpacity={0.7} onPress={navigateBack}>
-            <Feather name="arrow-left" size={24} color="#0f0" />
-          </TouchableOpacity>
+
           <SvgFromUri uri={plant.photo} height={150} width={150} />
 
           <Text style={styles.plantName}>{plant.name}</Text>
@@ -121,7 +119,7 @@ export function PlantSave() {
           <Button title="Cadastrar planta" onPress={handleSave} />
         </View>
       </View>
-    </ScrollView>
+    </ScrollView >
   );
 }
 
